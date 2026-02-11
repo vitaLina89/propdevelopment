@@ -1,0 +1,115 @@
+<mxfile host="drawio-plugin" modified="2026-01-07T08:46:41.755Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36" version="22.1.22" etag="0QsE4_nJNKvTtK5Bc5v8" type="embed">
+  <diagram id="data-security" name="Data Security Mindmap">
+    <mxGraphModel dx="644" dy="635" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="2400" pageHeight="1600" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="core" value="Безопасность данных" style="ellipse;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontStyle=1;fontSize=16;" parent="1" vertex="1">
+          <mxGeometry x="600" y="400" width="200" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="cat-public" value="Публичные" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontStyle=1;" parent="1" vertex="1">
+          <mxGeometry x="320" y="200" width="150" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-public" style="edgeStyle=elbowEdgeStyle;rounded=1;strokeColor=#6c8ebf;" parent="1" source="core" target="cat-public" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="public-items" value="• Маркетинговые материалы&#xa;• Описания ЖК и квартир&#xa;• Публичные API-описания" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#82b366;" parent="1" vertex="1">
+          <mxGeometry x="90" y="240" width="200" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-public-items" style="edgeStyle=elbowEdgeStyle;rounded=1;strokeColor=#82b366;" parent="1" source="cat-public" target="public-items" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="public-risk" value="Риск: искажение / некачественные данные&#xa;Оценка: значительный" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="1" vertex="1">
+          <mxGeometry x="80" y="120" width="220" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-public-risk" style="edgeStyle=elbowEdgeStyle;rounded=1;strokeColor=#d79b00;" parent="1" source="public-items" target="public-risk" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="public-why" value="Искажение витрины снижает продажи и доверие клиентов." style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" parent="1" vertex="1">
+          <mxGeometry x="80" y="20" width="240" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-public-why" style="edgeStyle=elbowEdgeStyle;rounded=1;strokeColor=#d6b656;" parent="1" source="public-risk" target="public-why" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="cat-internal" value="Внутренние" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontStyle=1;" parent="1" vertex="1">
+          <mxGeometry x="900" y="200" width="150" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-internal" style="edgeStyle=elbowEdgeStyle;rounded=1;strokeColor=#6c8ebf;" parent="1" source="core" target="cat-internal" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="internal-items" value="• Журналы сервисов&#xa;• Внутренние отчёты&#xa;• Справочники объектов без ПДн&#xa;• Тех. спецификации интеграций" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#82b366;" parent="1" vertex="1">
+          <mxGeometry x="1280" y="240" width="230" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-internal-items" style="edgeStyle=elbowEdgeStyle;rounded=1;strokeColor=#82b366;" parent="1" source="cat-internal" target="internal-items" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="internal-risk" value="Риск: утечка / обесценивание&#xa;Оценка: значительный / незначительный" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="1" vertex="1">
+          <mxGeometry x="1295" y="110" width="230" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-internal-risk" style="edgeStyle=elbowEdgeStyle;rounded=1;strokeColor=#d79b00;" parent="1" source="internal-items" target="internal-risk" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="internal-why" value="Раскрытие журналов и схем облегчает атаки; устаревание ограниченно влияет на бизнес." style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" parent="1" vertex="1">
+          <mxGeometry x="1280" width="260" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-internal-why" style="edgeStyle=elbowEdgeStyle;rounded=1;strokeColor=#d6b656;" parent="1" source="internal-risk" target="internal-why" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="cat-conf" value="Конфиденциальные" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontStyle=1;" parent="1" vertex="1">
+          <mxGeometry x="320" y="620" width="170" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-conf" style="edgeStyle=elbowEdgeStyle;rounded=1;strokeColor=#6c8ebf;" parent="1" source="core" target="cat-conf" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="conf-items" value="• ПДн клиентов/собственников&#xa;• Расширенные анкеты&#xa;• Бронирования и осмотры&#xa;• Статусы онлайн-сделки&#xa;• Биллинг ЖКУ&#xa;• Учётные данные персонала&#xa;• Ключи партнёрских API (test/preprod)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#82b366;" parent="1" vertex="1">
+          <mxGeometry x="40" y="680" width="260" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-conf-items" style="edgeStyle=elbowEdgeStyle;rounded=1;strokeColor=#82b366;" parent="1" source="cat-conf" target="conf-items" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="conf-risk" value="Риск: утечка / искажение / потеря / некачественные&#xa;Оценка: критический / критический / значительный / значительный" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="1" vertex="1">
+          <mxGeometry x="40" y="890" width="320" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-conf-risk" style="edgeStyle=elbowEdgeStyle;rounded=1;strokeColor=#d79b00;entryX=0.477;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" target="conf-risk" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="193" y="850" as="sourcePoint" />
+            <mxPoint x="193" y="880" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="conf-why" value="ПДн и статусы сделок подпадают под 152-ФЗ; ошибки ведут к юридическим рискам, жалобам и срывам сделок." style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" parent="1" vertex="1">
+          <mxGeometry x="50" y="1050" width="320" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-conf-why" style="edgeStyle=elbowEdgeStyle;rounded=1;strokeColor=#d6b656;" parent="1" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="199" y="1010" as="sourcePoint" />
+            <mxPoint x="199" y="1050" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="cat-secret" value="Секретные" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontStyle=1;" parent="1" vertex="1">
+          <mxGeometry x="900" y="620" width="150" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-secret" style="edgeStyle=elbowEdgeStyle;rounded=1;strokeColor=#6c8ebf;" parent="1" source="core" target="cat-secret" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="secret-items" value="• Платёжные токены/реквизиты&#xa;• KYC/AML документы&#xa;• Сканы паспортов/доверенностей&#xa;• Закрытые ключи, мастер-секреты&#xa;• Привилегированные учётки&#xa;• Бэкапы БД с ПДн&#xa;• Непубликованные финотчёты" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#82b366;" parent="1" vertex="1">
+          <mxGeometry x="1100" y="660" width="260" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-secret-items" style="edgeStyle=elbowEdgeStyle;rounded=1;strokeColor=#82b366;" parent="1" source="cat-secret" target="secret-items" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="secret-risk" value="Риск: утечка / искажение / потеря&#xa;Оценка: критический / критический / значительный" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="1" vertex="1">
+          <mxGeometry x="1310" y="860" width="230" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-secret-risk" style="edgeStyle=elbowEdgeStyle;rounded=1;strokeColor=#d79b00;" parent="1" source="secret-items" target="secret-risk" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="secret-why" value="Утечка/подмена ключей и токенов ведёт к прямому фроду; потеря — к остановке операций и невозможности восстановления." style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" parent="1" vertex="1">
+          <mxGeometry x="1330" y="1000" width="260" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-secret-why" style="edgeStyle=elbowEdgeStyle;rounded=1;strokeColor=#d6b656;" parent="1" source="secret-risk" target="secret-why" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
